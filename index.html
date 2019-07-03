@@ -7,6 +7,7 @@
     <title>Bootstrap Instagram</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 <body>
      <!-- Navbar -->
@@ -49,12 +50,12 @@
 
 <!-- Pills-->
 <div>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3 justify-content-center mt-2" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#firstView" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#firstView" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#secondView" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#secondView" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
   </li>
 </ul>
 <div class="tab-content" id="pills-tabContent">
@@ -63,21 +64,21 @@
       <div class="container-fluid">
 
           <div class="row px-0">
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%" ></div>
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%" ></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
           </div>
 
           <div class="row">
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
           </div>
 
           <div class="row">
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
-              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
+              <div class="col border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%"></div>
           </div>
 
       </div>
@@ -87,9 +88,47 @@
 
   <div class="tab-pane fade" id="secondView" role="tabpanel" aria-labelledby="pills-profile-tab">
       <!-- SECOND VIEW COLUMN-->
-      <div class="container">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo doloribus blanditiis praesentium quidem magni aliquam provident id placeat quo laudantium reprehenderit eligendi reiciendis, voluptatibus, pariatur, accusantium nesciunt cupiditate commodi.
-      </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Card -->
+
+                    <div class="card text-center w-50">
+
+                        <div class="card-header">
+                            <div class="row justify-content-between">
+                                 <div class="photoName col-6 justify-content-start"><h5 class="mx-0 text-left">Photo name</h5></div>
+                                 <div class="photoDate col-6 text-right"><h5> da/te</h5></div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body p-0">
+                           <img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%">
+                        </div>
+
+                        <div class="card-footer px-0">
+                            <div class="col text-left"><h6># of likes</h6></div>
+
+                            <div class="col text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime magnam numquam incidunt quos rerum laudantium atque vero ipsa laboriosam minima est sit aliquid, iusto labore natus tempora sequi? At?</div>
+
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text border-0 bg-light p-0"><i class="far fa-heart"></i></span>
+                                    </div>
+                                    <input class="form-control border-0 bg-light" type="text" placeholder="Comment...">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <!-- Card -->
+
+            </div>
+        </div>
+
 
 
   </div>
