@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">
-        <img src="http://izcinema.com/wp-content/uploads/2018/02/instagram-logo-name.png" width="190" height="50" class="d-inline-block align-top" alt=""></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+     <!-- Navbar -->
+     <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="http://izcinema.com/wp-content/uploads/2018/02/instagram-logo-name.png" width="190" height="50" class="d-inline-block align-top" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto"></ul>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-  Create a new post
-</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto"></ul>
+<!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Create a new post
+                    </button>
         <!-- Button trigger modal -->
 <div class="btn-group">
   <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
@@ -41,10 +42,63 @@
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
   </div>
-</div>
-  </div>
+        </div>
 </nav>
+</div>
 <!-- Navbar -->
+
+<!-- Pills-->
+<div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#firstView" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#secondView" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="firstView" role="tabpanel" aria-labelledby="pills-home-tab">
+      <!-- FIRST VIEW THREE COLUMNS-->
+      <div class="container-fluid">
+
+          <div class="row px-0">
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%" ></div>
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+          </div>
+
+          <div class="row">
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+          </div>
+
+          <div class="row">
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+              <div class="col-4 border border-1 px-0"><img class="img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" width="100%"></div>
+          </div>
+
+      </div>
+
+
+  </div>
+
+  <div class="tab-pane fade" id="secondView" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <!-- SECOND VIEW COLUMN-->
+      <div class="container">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo doloribus blanditiis praesentium quidem magni aliquam provident id placeat quo laudantium reprehenderit eligendi reiciendis, voluptatibus, pariatur, accusantium nesciunt cupiditate commodi.
+      </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<!-- Pills-->
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -55,9 +109,13 @@
       <textarea class= "mx-2 rounded mb-5">
           jhgyg
       </textarea>
-      <div class="ml-3">
+      <div class="">
+      <span class="border border-dark m-1 p-1 rounded text-align-center">
       <i class="fas fa-camera"></i>
+      </span>
+      <span class="border border-dark m-1 p-1 rounded text-align-center">
       <i class="fas fa-map-marker-alt"></i>
+      </span>
 
       </div>
       <div class="modal-footer">
@@ -67,6 +125,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
