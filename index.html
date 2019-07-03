@@ -91,15 +91,16 @@
 
 
         <div class="container">
-            <div class="row justify-content-center">
-                <!-- Card -->
+            <div class="row justify-content-center mb-5">
+
+                <!--  FIRST Card -->
 
                     <div class="card text-center w-50">
 
                         <div class="card-header">
                             <div class="row justify-content-between">
                                  <div class="photoName col-6 justify-content-start"><h5 class="mx-0 text-left">Photo name</h5></div>
-                                 <div class="photoDate col-6 text-right"><h5> da/te</h5></div>
+                                 <div class="photoDate col-6 text-right"><h5 class="text-muted"> da/te</h5></div>
                             </div>
 
                         </div>
@@ -114,7 +115,7 @@
                             <div class="col text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime magnam numquam incidunt quos rerum laudantium atque vero ipsa laboriosam minima est sit aliquid, iusto labore natus tempora sequi? At?</div>
 
                             <div class="col">
-                                <div class="input-group mb-3">
+                                <div class="input-group my-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text border-0 bg-light p-0"><i class="far fa-heart"></i></span>
                                     </div>
@@ -125,6 +126,83 @@
 
                     </div>
                 <!-- Card -->
+
+
+            </div>
+            <div class="row justify-content-center mb-5">
+
+                <!--  SECOND Card -->
+
+                    <div class="card text-center w-50">
+
+                        <div class="card-header">
+                            <div class="row justify-content-between">
+                                 <div class="photoName col-6 justify-content-start"><h5 class="mx-0 text-left">Photo name</h5></div>
+                                 <div class="photoDate col-6 text-right"><h5 class="text-muted"> da/te</h5></div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body p-0">
+                           <img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%">
+                        </div>
+
+                        <div class="card-footer px-0">
+                            <div class="col text-left"><h6># of likes</h6></div>
+
+                            <div class="col text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime magnam numquam incidunt quos rerum laudantium atque vero ipsa laboriosam minima est sit aliquid, iusto labore natus tempora sequi? At?</div>
+
+                            <div class="col">
+                                <div class="input-group my-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text border-0 bg-light p-0"><i class="far fa-heart"></i></span>
+                                    </div>
+                                    <input class="form-control border-0 bg-light" type="text" placeholder="Comment...">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <!-- Card -->
+
+
+            </div>
+            <div class="row justify-content-center mb-5">
+
+                <!--  THIRD Card -->
+
+                    <div class="card text-center w-50">
+
+                        <div class="card-header">
+                            <div class="row justify-content-between">
+                                 <div class="photoName col-6 justify-content-start"><h5 class="mx-0 text-left">Photo name</h5></div>
+                                 <div class="photoDate col-6 text-right"><h5 class="text-muted"> da/te</h5></div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-body p-0">
+                           <img class="img-fluid" src="http://lorempixel.com/600/400/sports/" alt="" width="100%">
+                        </div>
+
+                        <div class="card-footer px-0">
+                            <div class="col text-left"><h6># of likes</h6></div>
+
+                            <div class="col text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime magnam numquam incidunt quos rerum laudantium atque vero ipsa laboriosam minima est sit aliquid, iusto labore natus tempora sequi? At?</div>
+
+                            <div class="col">
+                                <div class="input-group my-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text border-0 bg-light p-0"><i class="far fa-heart"></i></span>
+                                    </div>
+                                    <input class="form-control border-0 bg-light" type="text" placeholder="Comment...">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <!-- Card -->
+
 
             </div>
         </div>
@@ -145,17 +223,15 @@
     <div class="modal-content">
       <div class="modal-body">
       </div>
-      <textarea class= "mx-2 rounded mb-5">
-          jhgyg
+      <textarea class= "mx-2 rounded mb-5" rows="4" cols="50" >
       </textarea>
-      <div class="">
-      <span class="border border-dark m-1 p-1 rounded text-align-center">
-      <i class="fas fa-camera"></i>
-      </span>
-      <span class="border border-dark m-1 p-1 rounded text-align-center">
-      <i class="fas fa-map-marker-alt"></i>
-      </span>
-
+      <div class="mb-2">
+        <span class="border border-dark m-1 p-1 rounded text-align-center" >
+            <i class="fas fa-camera ml-1"></i>
+        </span>
+        <span class="border border-dark m-1 px-2 py-1 rounded text-align-center">
+            <i class="fas fa-map-marker-alt"></i>
+        </span>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -166,9 +242,17 @@
 </div>
 
 
+<style>
 
+   .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+color: white;
+background: grey;
+   }
+   .nav-link{
+       color: grey;
+   }
 
-
+</style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
